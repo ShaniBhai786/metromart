@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>METRO</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="c&c.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="navBar">
+      <a href="index.html"><img src="1.png" alt="" /></a>
+      <!-- <h1><a href="index.html">Cash & Carry</a></h1> -->
+      <div class="bars">
+        <i class="fa fa-bars" id="bars"></i>
+      </div>
+
+      <div class="icons">
+        <div class="dot">
+          <span class="quantity">0</span>
+        </div>
+        <i class="fa fa-shopping-cart" id="shoppinG"></i>
+        <i class="fa fa-search" id="searchIcon"></i>
+      </div>
+
+      <div class="search">
+         <input type="search" name="search" id="search" placeholder="Search for items" onkeyup="searchTable();">
+         <input type="submit" name="" id="btn" value="Search">
+      </div>
+
+    </div>
+    <hr>
+
+    <!-- --------------------body---------------------------- -->
+    <div class="body">
+      <div class="list">  
+        
+        <div class="img1">
+          <a href="cackes_backs.html"><img src="backery.jpg" alt=""></a>
+          <h3>Cakes & Bakes</h3>
+        </div>
+        <div class="img2">
+
+          <a href=""><img src="household.jpg" alt=""></a>
+          <h3>Home Appliances</h3>
+        </div>
+        <div class="img3">
+          <a href=""><img src="grossary.png" alt=""></a>
+          <h3>Grossary</h3>
+        </div>
+        <div class="img4">
+          <a href=""><img src="joyland.jpg" alt=""></a>
+          <h3>Fun & Play</h3>
+        </div>
+        <div class="img5">
+          <a href=""><img src="cosmetics.jpg" alt=""></a>
+          <h3>Beauty</h3>
+        </div>
+        <div class="img6">
+          <a href=""><img src="electronics.jpg" alt=""></a>
+          <h3>Electronics</h3>
+        </div>
+        <video src="song.mp4" width="500px" controls poster=""></video>
+      </div>
+    </div>
+  </div>
+    <!-- --------------------body-Close--------------------------- -->
+    <!-- -------------------------Shopping Cart------------------------- -->
+    <div class="cart" id="Card">
+      <i class="fa fa-close" id="remove"></i>
+      <h1>Shopping Cart <i class="fa fa-shopping-cart" id="cart"></i></h1> 
+      <ul class="listCard">
+        <!-- \\dummy div -->
+      </ul>
+      <div class="checkOut">
+          <div class="total">0</div>
+      </div>
+      <form action="pay.html" method="get">
+        <input type="submit" name="pay" id="pay" value="Proceed to Pay" />
+      </form>
+    </div>
+  </div>
+      
+    <!-- -------------------------Shopping Cart------------------------- -->
+    <div class="navlinks" id="nav">
+      <div class="close">
+        <i class="fa fa-close" id="close"></i>
+      </div>
+      <a href="index.html"><img src="1.png" alt="" /></a>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="blogs.html">BLOGS</a></li>
+        
+      </ul>
+    </div>
+    <div class="welcome">
+      <i class="fa fa-close" id="wel-remove"></i>
+      <div class="txt">
+        <h1>Welcome to Pakistan's Biggest <br> Purchasing Platform</h1>
+      </div>
+      <div class="explore">
+        <h1> Shop now </h1>
+      </div>
+    </div>
+    
+    <script src="index.js">
+      
+    </script>
+  </body>
+</html>

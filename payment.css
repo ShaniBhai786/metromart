@@ -1,0 +1,67 @@
+/* payment.css */
+.container{
+    display: inline-block;
+    position: absolute;
+    border-radius: 5px;
+    top: 15%;
+    left: 30%;
+    width: 45%;
+    height: 70vh;
+    background-color:#fff5 ;
+    filter: drop-shadow(10px 10px 10px rgb(133, 133, 134));
+    text-align: center;
+}
+h2{
+    color: #1c1f25;
+}
+.inputs{
+    position: relative;
+    top: 20px;
+}
+input{
+    margin: 5px;
+}
+.container input{
+    display: inline-block;
+    position: relative;
+    top: 0rem;
+    padding: 10px;
+    border-radius: 5px;
+    width: 15rem;
+    font-size: 15px ;
+}
+.PI{
+    position: relative;
+}
+.payment{
+    position: relative;
+    top: 2vh;
+}
+.buttons input{
+    position: relative;
+    top: 3vh;
+    cursor: pointer;
+    background-color: #014171;
+    color: white;
+    font-weight: bolder;
+}
+.buttons input:hover{
+    border-radius: 100px;
+    transition: ease-in-out 0.3s;
+}
+#address{
+    width: 40vw;
+}
+#reset{
+    background-color: #fbc51d;
+    color: #1c1f25;
+}
+.desc h1{
+    display: inline-block;
+    position: relative;
+    color: #dce0e1;
+    top: 5%;
+    left: 10%;
+    font-size: 40px;
+    filter: drop-shadow(10px 10px 10px rgb(113, 113, 128));
+}

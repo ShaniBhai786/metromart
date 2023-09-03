@@ -1,0 +1,321 @@
+<!-- cackes_backs.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>METRO</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="backery.css" />
+    <link rel="shortcut icon" href="c&c.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<script>
+    
+</script>
+<body>
+    <!-- --------------------body---------------------------- -->
+    <div class="body">
+        
+        <div class="items">
+            <div class="text">
+                <h1>Cakes & Bakes</h1>
+            </div>
+            <div class="products">
+            </div>
+        </div>
+    </div>
+        
+    <!-- ---------------------Search Function--------------------- -->
+    
+    </div>
+    
+    <!-- --------------------body-Close--------------------------- -->
+
+    <!-- -------------------------Shopping Cart------------------------- -->
+    
+    <div class="navBar">
+        <a href="index.html"><img src="1.png" alt="" /></a>
+        <!-- <h1><a href="index.html">Cash & Carry</a></h1> -->
+        <div class="bars">
+            <i class="fa fa-bars" id="bars"></i>
+        </div>
+
+        <div class="icons">
+            <div class="dot">
+                <span class="quantity">0</span>
+            </div>
+            <i class="fa fa-shopping-cart" id="shoppinG"></i>
+            <i class="fa fa-search" id="searchIcon"></i>
+        </div>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Search for items" onkeyup="searchTable()">
+            <input type="submit" name="" id="btn" value="Search">
+        </div>
+        <hr>
+        
+    </div>
+    <div class="cart" id="Card">
+        <i class="fa fa-close" id="remove"></i>
+        <h1>Shopping Cart <i class="fa fa-shopping-cart" id="cart"></i></h1>
+        <ul class="listCard" id="listCart">
+            <!-- \\dummy div -->
+            
+        </ul>
+        <div class="checkOut">
+            <div class="total" id="total">0</div>
+        </div>
+        
+            <button type="submit" name="pay" id="pay" value="Proceed to Pay" >Proceed to Pay</button>
+    </div>
+
+    <!-- -------------------------Shopping Cart------------------------- -->
+    <div class="navlinks" id="nav">
+        <div class="close">
+            <i class="fa fa-close" id="close"></i>
+        </div>
+        <a href="index.html"><img src="1.png" alt="" /></a>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="blogs.html">BLOGS</a></li>
+        </ul>
+    </div>
+    <div class="desc" id="desc">
+        <i class="fa fa-close" id="out"></i>
+        <h1>Billing Details</h1>
+        <div class="container" id="container">
+            <form action="">
+                <div class="inputs">
+                    <div class="PI">
+                        <h2>Personal Information</h2>
+                        <input type="text" name="FullName" id="name" placeholder="Full Name" required>
+                    <input type="text" name="ph" id="ph" placeholder="Phone #" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="text" name="city" id="city" placeholder="City" required>
+                    <input type="text" name="address" id="address" placeholder="Street Address" required >
+                    </div>
+                    <div class="payment">
+                        <h2>Bank Details</h2>
+                        <input type="text" name="title" id="title" placeholder="Account Title" required>
+                        <input type="text" name="debit" id="debit" placeholder="Card No." required>
+                    <input type="text" name="cvc" id="cvc" placeholder="CVC" required>
+                    <input type="date" name="expire" id="expire" value="Expirey date" placeholder="Expiry date" required>
+                    <div class="buttons">
+                        <input type="reset" name="reset" id="reset" value="Reset">
+                        <input type="submit" name="button" id="button" value="Pay Now">
+                    </div>
+                    </div>
+                </div>
+            </form>
+          </div>
+    </div> 
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+<script>
+   
+    
+    let error = document.createElement("a");
+    error.setAttribute("href","cackes_backs.html");
+    error.setAttribute("innerText","Item Not Found");
+    error.style.color = "white";
+
+</script>
+<script>
+    
+    let list = document.querySelector(".products");
+    let listCart = document.querySelector(".listCard");
+    let total = document.querySelector('.total');
+    let quantity = document.querySelector('.quantity');
+    const payment = document.getElementById("pay");
+    const container = document.getElementById("container");
+    var out = document.getElementById("out");
+    var desc = document.getElementById("desc");
+
+    let Products = [
+        {
+            id : 1,
+            image : 'eggs.jpg',
+            title : 'Premium Quality<br> White Eggs Half dozen',
+            price : 125
+        },
+
+        {
+            id : 2,
+            image : 'Goldeneggs.jpeg',
+            title : 'Premium Quality <br> Desi Eggs Half dozen', 
+            price : 240
+        },
+
+        {
+            id : 3,
+            image : 'bread.jpg',
+            title : 'Premium Quality <br> Milky Bread', 
+            price : 250
+        },
+        {
+            id : 4,
+            image : 'rusk.jpeg',
+            title : 'Premium Quality <br> Milky Rusk', 
+            price : 100
+        },
+        {
+            id : 5,
+            image : 'milkpack.jpg',
+            title : 'Nestle Milk Pack <br> 250gm 1Pc', 
+            price : 70
+        },
+        {
+            id : 6,
+            image : 'milkpack liter.jpg',
+            title : 'Nestle Milk Pack <br> 1 liter 1Pc', 
+            price : 210
+        },
+        {
+            id : 7,
+            image : 'milkpack cream.jpg',
+            title : 'Nestle Milk Pack Cream <br> 250gm 1Pc', 
+            price : 180
+        },
+        {
+            id : 8,
+            image : 'olper.jpg',
+            title : 'Olper Milk  <br> 1 Liter 1Pc', 
+            price : 200
+        },
+        {
+            id : 9,
+            image : 'olper70.jpg',
+            title : 'Olper Milk  <br> 250gm 1Pc', 
+            price : 70
+        },
+        {
+            id : 10,
+            image : 'olperCream.jpg',
+            title : 'Olper Cream <br> 200gm 1Pc', 
+            price : 170
+        },
+        {
+            id : 11,
+            image : 'olper80.jpg',
+            title : 'Olper Milk <br> 375gm 1Pc', 
+            price : 100
+        },
+        {
+            id : 12,
+            image : 'haleeb.jpg',
+            title : 'Premium Quality <br> Haleeb Milk 250gm 1Pc', 
+            price : 70
+        },
+        {
+            id : 13,
+            image : 'nido.jpg',
+            title : 'Nestle Nido <br> Fortigrow 1000gm 1Pc', 
+            price : 1200
+        },
+        {
+            id : 14,
+            image : 'nido1+.jpg',
+            title : 'Nestle Nido1+ <br> 800gm 1Pc', 
+            price : 1200
+        },
+        
+    ];
+
+    let listCards = [];
+    function initApp(){
+        Products.forEach((value, key)=>{
+            let newDiv = document.createElement('div');
+        newDiv.classList.add('item');
+        newDiv.innerHTML = `
+            <div><img src="${value.image} " title="${value.title}"></div>
+            <h4 class="title">${value.title}</h4>
+            <h3 class="price"><b>Price ${value.price.toLocaleString()}</b></h3>
+            <button onclick = "addToCard(${key})" title="Rs. ${value.price}/-">Add To Card</button>
+            `;
+        list.appendChild(newDiv);
+        })
+    }
+    initApp();
+// --------------------AddToCart Function---------------------
+   
+function addToCard(key){
+    if(listCards[key] == null){
+        // copy product form list to list card
+        listCards[key] = JSON.parse(JSON.stringify(Products[key]));
+        listCards[key].quantity = 1;
+        // alert("Hello-World");
+    }
+    reloadCard();
+}
+function reloadCard(){
+    listCart.innerHTML = '';
+    let count = 0;
+    let totalPrice = 0;
+    listCards.forEach((value, key)=>{
+        totalPrice = totalPrice + value.price;
+        count = count + value.quantity;
+        if(value != null){
+            payment.addEventListener("click", function(){
+        desc.style.display = "inline-block";
+    });
+    out.addEventListener("click", function(){
+        desc.style.display = "none";
+    });
+            let newDiv = document.createElement('li');
+            newDiv.innerHTML = `
+                <div><img src="${value.image}"/></div>
+                <h4 class = "title">${value.title}</h4>
+                <h3 class = "price">Price : ${value.price.toLocaleString()}</h3>
+                <div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity - 1})">–</button>
+                    <div class="count">${value.quantity}</div>
+                    <button onclick="changeQuantity(${key}, ${value.quantity + 1})">+</button>
+                </div>`;
+                listCart.appendChild(newDiv);
+        }
+    })
+    total.innerText = totalPrice.toLocaleString();
+    quantity.innerText = count;
+}
+
+// -------------------Change quantity Function-------------------------
+function changeQuantity(key, quantity){
+    if(quantity == 0){
+        delete listCards[key];
+    }
+    else{
+        listCards[key].quantity = quantity;
+        listCards[key].price = quantity * Products[key].price;
+    }
+    reloadCard();
+}
+
+    var searchTable = function searchTable(){
+    let filter = document.getElementById("search").value.toUpperCase();
+    let list = document.querySelectorAll(".products");
+    
+    const pname = document.getElementsByTagName("h4");
+    for(var i=0; i < pname.length; i++ ){
+        let match = Products[i].getElementsByTagName("h4")[0];
+
+        if(match){
+            let textvalue = match.textContent || match.innerHTML
+
+            if(textvalue.toUpperCase().indexOf(filter) > -1){
+                Products[i].style.display = "";
+            }
+            else{
+                Products[i].style.display = "none";
+            }
+        }
+    }
+    }
+</script>
