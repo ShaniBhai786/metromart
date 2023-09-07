@@ -85,35 +85,7 @@
             <li><a href="blogs.html">BLOGS</a></li>
         </ul>
     </div>
-    <div class="desc" id="desc">
-        <i class="fa fa-close" id="out"></i>
-        <h1>Billing Details</h1>
-        <div class="container" id="container">
-            <form action="">
-                <div class="inputs">
-                    <div class="PI">
-                        <h2>Personal Information</h2>
-                        <input type="text" name="FullName" id="name" placeholder="Full Name" required>
-                    <input type="text" name="ph" id="ph" placeholder="Phone #" required>
-                    <input type="email" name="email" id="email" placeholder="Email" required>
-                    <input type="text" name="city" id="city" placeholder="City" required>
-                    <input type="text" name="address" id="address" placeholder="Street Address" required >
-                    </div>
-                    <div class="payment">
-                        <h2>Bank Details</h2>
-                        <input type="text" name="title" id="title" placeholder="Account Title" required>
-                        <input type="text" name="debit" id="debit" placeholder="Card No." required>
-                    <input type="text" name="cvc" id="cvc" placeholder="CVC" required>
-                    <input type="date" name="expire" id="expire" value="Expirey date" placeholder="Expiry date" required>
-                    <div class="buttons">
-                        <input type="reset" name="reset" id="reset" value="Reset">
-                        <input type="submit" name="button" id="button" value="Pay Now">
-                    </div>
-                    </div>
-                </div>
-            </form>
-          </div>
-    </div> 
+ 
 
     </div>
     <script src="index.js"></script>
@@ -264,10 +236,7 @@ function reloadCard(){
         count = count + value.quantity;
         if(value != null){
             payment.addEventListener("click", function(){
-        desc.style.display = "inline-block";
-    });
-    out.addEventListener("click", function(){
-        desc.style.display = "none";
+        window.location.assign("payment.html")
     });
             let newDiv = document.createElement('li');
             newDiv.innerHTML = `
