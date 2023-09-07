@@ -1,0 +1,144 @@
+<!-- payment.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>METRO</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="payment.css">
+    <link rel="shortcut icon" href="c&c.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="navBar">
+      <a href="index.html"><img src="1.png" alt="" /></a>
+      <!-- <h1><a href="index.html">Cash & Carry</a></h1> -->
+      <div class="bars">
+        <i class="fa fa-bars" id="bars"></i>
+      </div>
+
+      <div class="icons">
+        <div class="dot">
+          <span class="quantity">0</span>
+        </div>
+        <i class="fa fa-shopping-cart" id="shoppinG"></i>
+        <i class="fa fa-search" id="searchIcon"></i>
+      </div>
+    </div>
+    <hr>
+
+    <!-- --------------------body---------------------------- -->
+    <div class="body">
+      <div class="desc" id="desc">
+        <i class="fa fa-close" id="out"></i>
+        <h1>Billing Details</h1>
+        <div class="maincontainer">
+
+        <div class="container" id="container">
+            <form action="">
+                <div class="inputs">
+                    <div class="PI">
+                        <h2>Personal Information</h2>
+                        <input type="text" name="FullName" id="name" placeholder="Full Name" required>
+                    <input type="text" name="ph" id="ph" placeholder="Phone #" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="text" name="city" id="city" placeholder="City" required>
+                    <input type="text" name="address" id="address" placeholder="Street Address" required >
+                    </div>
+                    <div class="payment">
+                        <h2>Bank Details</h2>
+                        <input type="text" name="title" id="title" placeholder="Account Title" required>
+                        <input type="text" name="debit" id="debit" placeholder="Card No." required>
+                    <input type="text" name="cvc" id="cvc" placeholder="CVC" required>
+                    <select name="date" id="date">
+                        <option value="date">Choose Month</option>
+                        <option value="date">1</option>
+                        <option value="date">2</option>
+                        <option value="date">3</option>
+                        <option value="date">4</option>
+                        <option value="date">5</option>
+                        <option value="date">6</option>
+                        <option value="date">7</option>
+                        <option value="date">8</option>
+                        <option value="date">9</option>
+                        <option value="date">10</option>
+                        <option value="date">11</option>
+                        <option value="date">12</option>
+                    </select>
+                    <select name="year" id="year">
+                        <option value="year">Choose Year</option>
+                        <option value="year">2023</option>
+                        <option value="year">2024</option>
+                        <option value="year">2025</option>
+                        <option value="year">2026</option>
+                        <option value="year">2027</option>
+                        <option value="year">2028</option>
+                        <option value="year">2029</option>
+                        <option value="year">2030</option>
+                        <option value="year">2031</option>
+                        <option value="year">2032</option>
+                        <option value="year">2033</option>
+                        <option value="year">2034</option>
+                    </select>
+                    <div class="buttons">
+                        <input type="reset" name="reset" id="reset" value="Reset">
+                        <input type="submit" name="button" id="button" value="Pay Now">
+                    </div>
+                    </div>
+                </div>
+            </form>
+          </div>
+
+          <div class="cod" id="COD">
+            <span id="txt">Cash on Delivery (COD):</span> 
+            <input type="checkbox" name="check" id="check">
+            <form action="">
+                <input type="text" name="Name" id="name" placeholder="Full Name" required title="Full Name">
+            <input type="text" name="Address" id="location" placeholder="Street Address" required title="Address">
+            <input type="reset" name="Cancel" id="cancel" value="Cancel">
+            <input type="submit" name="sub" id="sub" value="Place Order">
+            </form>
+            
+          </div>
+        </div>
+    </div>
+  </div>
+    <!-- --------------------body-Close--------------------------- -->
+    <!-- -------------------------Shopping Cart------------------------- -->
+    <div class="cart" id="Card">
+      <i class="fa fa-close" id="remove"></i>
+      <h1>Shopping Cart <i class="fa fa-shopping-cart" id="cart"></i></h1> 
+      <ul class="listCard">
+        <!-- \\dummy div -->
+      </ul>
+      <div class="checkOut">
+          <div class="total">0</div>
+      </div>
+    </div>
+  </div>
+      
+    <!-- -------------------------Shopping Cart------------------------- -->
+    <div class="navlinks" id="nav">
+      <div class="close">
+        <i class="fa fa-close" id="close"></i>
+      </div>
+      <a href="index.html"><img src="1.png" alt="" /></a>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="blogs.html">BLOGS</a></li>
+        
+      </ul>
+    </div>
+    <script src="index.js">
+      
+    </script>
+  </body>
+</html>
