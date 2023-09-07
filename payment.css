@@ -3,8 +3,8 @@
     display: inline-block;
     position: absolute;
     border-radius: 5px;
-    top: 15%;
-    left: 30%;
+    top: 1%;
+    left: 10%;
     width: 45%;
     height: 70vh;
     background-color:#fff5 ;
@@ -64,4 +64,31 @@ input{
     left: 10%;
     font-size: 40px;
     filter: drop-shadow(10px 10px 10px rgb(113, 113, 128));
+}
+select{
+    display: inline-block;
+    position: relative;
+    top: 0rem;
+    padding: 10px;
+    border-radius: 5px;
+    width: 8rem;
+    font-size: 13px ;
+    text-align: center;
+}
+.maincontainer{
+    display: block;
+    position: relative;
+    top: 10%;
+    width: 100%;
+    /* justify-content: space-between; */
+}
+.cod{
+    display: inline-block;
+    position: relative;
+    background-color: #dce0e1;
+    color: #1c1f25;
+    width: 20%;
+    height: 70vh;
+    border-radius: 5px;
+    transform: translateX(70vw);
 }
