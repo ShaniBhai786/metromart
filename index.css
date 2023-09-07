@@ -434,6 +434,8 @@ border-radius: 0px;
     display: inline-block;
     position: absolute;
     margin-bottom: 0;
+    bottom: 0;
+    right: 0;
     padding: 10px;
     width: 24.5vw;
     height: 4.45rem;
